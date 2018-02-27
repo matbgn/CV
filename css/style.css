@@ -1,16 +1,34 @@
+.titre {
+    background-color: #B71C1C;
+    padding : 50px 0px 40px 0px;
+    margin-left: -75px;
+    margin-top: -70px;
+    margin-right: -75px;
+    text-align: center;
+}
+
+.mainright {
+    margin-top: 75px;
+}
+
+.imagethumb{
+    width: 40px !important ;
+}
+
 body {
     background: #f4f4f4;
     color: #757575;
     font-family: 'Alegreya Sans', sans-serif;
     letter-spacing: 2px;
     padding-bottom: 60px;
+
 }
 
 .container {
     background: #fff;
     padding: 70px 75px;
     margin: 50px auto;
-    border: 1px solid #a5d4fc;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 img {
@@ -18,7 +36,8 @@ img {
 }
 
 .propic {
-    border-radius: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 hr {
@@ -42,7 +61,7 @@ h2 {
 h3 {
     font-size: 1.4em;
     text-transform: uppercase;
-    color: #000;
+    color: white;
     margin-top: 0;
 }
 
@@ -75,6 +94,7 @@ li {
 
 .social {
     margin-right: 7px;
+    
 }
 
 .btn .fa {
@@ -103,6 +123,7 @@ blockquote {
 
 .mainleft {
     padding-right: 30px;
+    
 }
 
 .testimonials img {
