@@ -13,7 +13,7 @@ $dompdf->loadHtml(file_get_contents('index.html'));
 $dompdf->setPaper('A4', 'portrait');
 
 // Other options
-$dompdf->set_option('dpi', '195', 'pdfBackend', 'PDFLib');
+$dompdf->set_option('dpi', '200', 'pdfBackend', 'PDFLib');
 
 // Render the HTML as PDF
 $dompdf->render();
@@ -21,4 +21,3 @@ $dompdf->render();
 // Output the generated PDF to Browser
 $dompdf->stream("MatthieuBorgognonCV");
 ?>
-
