@@ -12,8 +12,8 @@ $dompdf->loadHtml(file_get_contents('index.html'));
 // (Optional) Setup the paper size and orientation
 $dompdf->setPaper('A4', 'portrait');
 
-// 
-$dompdf->mediaType('print');
+// Other options
+$dompdf->set_option('defaultFont', 'Courier');
 
 // Render the HTML as PDF
 $dompdf->render();
