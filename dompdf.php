@@ -9,11 +9,8 @@ use Dompdf\Dompdf;
 $dompdf = new Dompdf();
 $dompdf->loadHtml(file_get_contents('index.html'));
 
-// Change the default font
-$dompdf->set_option('defaultFont', 'Courier');
-
 // (Optional) Setup the paper size and orientation
-$dompdf->setPaper(array(0,0,5000,5000), 'portrait');
+$dompdf->setPaper(array(-500,-500,5000,5000), 'portrait');
 
 // Render the HTML as PDF
 $dompdf->render();
