@@ -13,7 +13,7 @@ $dompdf->loadHtml(file_get_contents('index.html'));
 $dompdf->setPaper('A4', 'portrait');
 
 // Other options
-$dompdf->set_option('dpi', '200');
+$dompdf->set_option('dpi', '195', 'pdfBackend', 'PDFLib');
 
 // Render the HTML as PDF
 $dompdf->render();
