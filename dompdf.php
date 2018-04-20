@@ -10,11 +10,11 @@ $dompdf = new Dompdf();
 $dompdf->loadHtml(file_get_contents('index.html'));
 
 // (Optional) Setup the paper size and orientation
-$dompdf->setPaper(array(0,0,850,1600), 'portrait');
+$dompdf->setPaper(A4, 'portrait');
 
 // Render the HTML as PDF
 $dompdf->render();
 
 // Output the generated PDF to Browser
-$dompdf->stream("sample")
+$dompdf->stream("MatthieuBorgognonCV")
 ?>
