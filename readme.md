@@ -28,5 +28,6 @@ Special Thanks!
 ------------------------------------
 - Design: https://www.facebook.com/towkirahmedbappy
 - Icons: http://fontawesome.io and https://material.io/icons/ and http://fabricator.me
+- Flags: https://www.flaticon.com/packs/countrys-flags designed by Freepik from Flaticon
 - Fonts: http://google.com/fonts
 - NiceScroll: https://github.com/inuyaksa/jquery.nicescroll
