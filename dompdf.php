@@ -10,7 +10,7 @@ $dompdf = new Dompdf();
 $dompdf->loadHtml(file_get_contents('index.html'));
 
 // (Optional) Setup the paper size and orientation
-$dompdf->setPaper(array(0,0,5000,5000), 'portrait');
+$dompdf->setPaper(array(0,0,1920,1080), 'portrait');
 
 // Render the HTML as PDF
 $dompdf->render();
