@@ -2,13 +2,13 @@
     .dl-share {
         display: none;
     }
-    
+
     .year {
         text-align: left;
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
     body {
         padding-bottom: 10px;
     }
@@ -18,7 +18,7 @@
     }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 800px) {
     .container {
         padding: 20px;
     }
