@@ -13,7 +13,7 @@ $dompdf->loadHtml(file_get_contents('index.html'));
 $dompdf->setPaper('A4', 'portrait');
 
 // 
-$dompdf->setDefaultMediaType('print');
+$dompdf->setMediaType('print');
 
 // Render the HTML as PDF
 $dompdf->render();
