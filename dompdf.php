@@ -10,7 +10,7 @@ $dompdf = new Dompdf();
 $dompdf->loadHtml(file_get_contents('index.html'));
 
 // (Optional) Setup the paper size and orientation
-$dompdf->setPaper(array(0,0,800,1131), 'portrait');
+$dompdf->setPaper(array(0,0,1200,1697), 'portrait');
 
 // Other options
 $dompdf->set_option('dpi', '200');
