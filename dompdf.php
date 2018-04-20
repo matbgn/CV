@@ -14,7 +14,6 @@ $dompdf->setPaper('A4', 'portrait');
 
 // Other options
 $dompdf->set_option('dpi', '180');
-$dompdf->set_option('defaultMediaType', 'print');
 
 // Render the HTML as PDF
 $dompdf->render();
