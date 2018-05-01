@@ -10,7 +10,7 @@ $pdf = new Pdf(array(
 
 $pdf->addPage('https://matthieu.borgognon.ch');
 // On some systems you may have to set the path to the wkhtmltopdf executable
-$pdf->binary = 'wkhtmltopdf';
+$pdf->binary = './wkhtmltopdf';
 //Test to send
 $pdf->send();
 if (!$pdf->send()) {
