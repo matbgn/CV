@@ -1,3 +1,5 @@
+https://travis-ci.org/matbgn/CV.svg?branch=master
+
 CVstrap - Free Minimal CV HTML5/Bootstrap Template by EvenFly
 ------------------------------------
 
