@@ -5,10 +5,12 @@ before_install:
   - sudo apt-get -qq update
   - sudo apt-get install -y openssl build-essential xorg libssl-dev xfonts-75dpi
   - echo '## Downloading wkhtmltopdf 0.12.4'
+  - mkdir wkhtmltopdf
   - wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.4/wkhtmltox-0.12.4_linux-generic-amd64.tar.xz
-  - tar -xvf wkhtmltox-0.12.4_linux-generic-amd64.tar.xz
+  - tar -xvf wkhtmltox-0.12.4_linux-generic-amd64.tar.xz 
   - echo '## Extracting wkhtmltox into /usr/bin and clearing'
-  - sudo mv wkhtmltox/bin/wkhtmltopdf /usr/bin/wkhtmltopdf
+  - sudo mv wkhtmltox/bin/wkhtmltopdf wkhtmltopdf/wkhtmltopdf
+  - export PATH=$PATH:$PWD/wkhtmltopdf/
   - rm -rf wkhtmltox
   - rm wkhtmltox-0.12.4_linux-generic-amd64.tar.xz
 script:
@@ -19,4 +21,3 @@ artifacts:
     - google.pdf
 only:
     - master
-
