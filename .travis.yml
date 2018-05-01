@@ -13,7 +13,7 @@ before_install:
   - rm wkhtmltox-0.12.4_linux-generic-amd64.tar.xz
 script:
   - echo '## Execute wkhtmltopdf'
-  - ./wkhtmltopdf.sh
+  - make wkhtmltopdf
 artifacts:
   paths:
   - public
