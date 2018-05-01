@@ -4,12 +4,15 @@ before_install:
   - echo '## Installing wkhtmltopdf dependencies'
   - sudo apt-get -qq update
   - sudo apt-get install -y openssl build-essential xorg libssl-dev xfonts-75dpi
+  - echo '## Downloading wkhtmltopdf 0.12.4'
   - wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.4/wkhtmltox-0.12.4_linux-generic-amd64.tar.xz
   - tar -xvf wkhtmltox-0.12.4_linux-generic-amd64.tar.xz
+  - echo '## Extracting wkhtmltox into /usr/bin and clearing'
   - sudo mv wkhtmltox/bin/wkhtmltopdf /usr/bin/wkhtmltopdf
   - rm -rf wkhtmltox
   - rm wkhtmltox-0.12.4_linux-generic-amd64.tar.xz
 script:
+  - echo '## Execute wkhtmltopdf'
   - ./wkhtmltopdf.sh
 artifacts:
   paths:
