@@ -1,7 +1,10 @@
 language: php
 sudo: required
-dist: trusty
+before_script:
+  - composer require mikehaertl/phpwkhtmltopdf
 script:
+  - vendor/mikehaertl/phpwkhtmltopdf
+install:
   - php wkhtmltopdf.php
 artifacts:
   paths:
