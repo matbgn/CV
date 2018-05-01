@@ -15,7 +15,8 @@ script:
   - echo '## Execute wkhtmltopdf'
   - make wkhtmltopdf
 artifacts:
-  paths:
-  - public
+    paths:
+    - google.pdf
 only:
-  - master
+    - master
+
