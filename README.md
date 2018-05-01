@@ -1,4 +1,4 @@
-https://travis-ci.org/matbgn/CV.svg?branch=master
+<img src="https://travis-ci.org/matbgn/CV.svg?branch=master" alt="Build status">
 
 CVstrap - Free Minimal CV HTML5/Bootstrap Template by EvenFly
 ------------------------------------
