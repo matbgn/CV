@@ -4,7 +4,7 @@ before_script:
   - composer require mikehaertl/phpwkhtmltopdf
 script:
   - vendor/mikehaertl/phpwkhtmltopdf
-install:
+after_script:
   - php wkhtmltopdf.php
 artifacts:
   paths:
