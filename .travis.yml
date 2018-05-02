@@ -1,13 +1,16 @@
 language: php
 sudo: required
-before_script:
-  - composer require mikehaertl/phpwkhtmltopdf
 script:
-  - vendor/mikehaertl/phpwkhtmltopdf
-after_script:
+  - mkdir _build
   - php wkhtmltopdf.php
-artifacts:
-  paths:
-  - MatthieuBorgognonCV.pdf
+deploy:
+  provider: releases
+  api_key:
+    secure: LAYP_a5qSU7ItrqBfFwm6w
+  file:
+  - _build/MatthieuBorgognonCV.pdf
+  skip_cleanup: true
+  on:
+    tags: true
 only:
   - master
