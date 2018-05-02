@@ -13,7 +13,4 @@ $pdf->addPage('https://matthieu.borgognon.ch');
 $pdf->binary = './wkhtmltopdf';
 //Test to send
 $pdf->send("_build/MatthieuBorgognonCV.pdf");
-if (!$pdf->send()) {
-    throw new Exception('Could not create PDF: '.$pdf->getError());
-}
 ?>
