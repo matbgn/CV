@@ -8,7 +8,7 @@ deploy:
   api_key:
     secure: LAYP_a5qSU7ItrqBfFwm6w
   file:
-  - _build/MatthieuBorgognonCV.pdf
+    - _build/MatthieuBorgognonCV.pdf
   skip_cleanup: true
   on:
     tags: true
